@@ -181,11 +181,11 @@ public class MainActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         //Toast.makeText(MainActivity.this, "Play_list:"+daad[list_play_baihientai], Toast.LENGTH_LONG).show();
-                        wv.loadUrl("javascript:showAndroidToast0_1(" + (list_play_baihientai - 1) + ")");
+                        wv.loadUrl("javascript:showAndroidToast11(" + (list_play_baihientai - 1) + ")");
                     } else {
                         //showGui("Hết đoạn");
                         list_play_baihientai = i_first;
-                        wv.loadUrl("javascript:showAndroidToast0_1(" + (list_play_baihientai - 1) + ")");
+                        wv.loadUrl("javascript:showAndroidToast11(" + (list_play_baihientai - 1) + ")");
                         try {
                             music_play(daad[i_first]);
                         } catch (IOException e) {
@@ -323,9 +323,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void killMediaPlay() {
 
-        if (mediaPlayer != null) {
-            //mediaPlayer=null;
-        }
+
         try {
             mediaPlayer.pause();
             mediaPlayer.release();
@@ -372,7 +370,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onAttachedToWindow() {
         openOptionsMenu();
-    };
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

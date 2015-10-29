@@ -9,7 +9,7 @@ $(function () {
     });
 
     //$(document).on('taphold', function(e){
-    //alert('X: ' + holdCords.holdX + ' Y: ' + holdCords.holdY );
+    //alert('X: ' + holdCords.holdX + ' Y: ' + holdCords.holdY ); 
     //});
 
     var holdCords = {
@@ -104,7 +104,7 @@ function showAndroidToast(toast, elem) {
     elem.classList.add('active');
 
     Android.showToast(toast);
-//alert(data_link_mp3[toast]);
+//alert(data_link_mp3[toast]);		
 
 }
 function showAndroidToast1(toast) {
@@ -130,7 +130,7 @@ function showAndroidToast0(toast) {
     //Android.showToast(3);
 }
 
-function showAndroidToast0_1(toast) {
+function showAndroidToast11(toast) {
     //alert("1234");
     var x = document.getElementsByTagName('p');
     for (i = 0; i < x.length; i++) {
